@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #5a2a6e, #1a1a1a, #f39c12); /* Luxurious gradient colors */
+      background-size: 400% 400%;
+      animation: gradientMove 5s ease infinite; /* Animation for fast-moving gradient */
+    }
+
+    .container {
+      background: rgba(30, 30, 30, 0.8); /* Semi-transparent dark background */
+      color: #ffd700; /* Deep gold color */
+      border-radius: 15px;
+      padding: 50px;
+      width: 80%;
+      max-width: 900px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8); /* Heavy shadow for depth */
+      animation: fadeIn 2s ease-out;
+    }
+
+    h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      color: #ffd700; /* Deep gold */
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.6); /* Gold glow effect */
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+      color: #fff; /* Crisp white text for readability */
+      letter-spacing: 1.5px;
+      line-height: 1.5;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .button {
+      background-color: #ffd700; /* Deep gold button */
+      color: #1f1f1f; /* Dark text */
+      font-size: 1.2rem;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e6c200; /* Slightly darker gold on hover */
+    }
+
+    /* Animation for the gradient */
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Animation for the container */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Mobile responsive styles */
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Fizzix buildtech private limited</h1>
+    <p>CIN: U46632TS2025PTC195473</p>
+  </div>
+
+</body>
+</html>
